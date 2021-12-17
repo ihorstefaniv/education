@@ -92,16 +92,22 @@ if (dayTime >= 23 && dayTime <= 5) {
 } else {
     console.log("Доброго вечора!");
 };
-//tast7 (варіант 2)
-// let today = new Date();
-  // let timeNow = today.getHours()
-  //
-//switch (true) { // <=== Change is here
-   // case timeNow > 17 : console.log("Доброго вечора");
-   // break;
-   // case timeNow > 12 : console.log("Доброго дня");
-   // break;
-   // case timeNow > 6 : console.log("Доброго ранку");
-   // break;
-   // default: console.log("Доброго ночі");
-  //}
+
+//task7 other
+let date = new Date();
+let hour = date.getHours();
+
+switch(true) {
+    case (hour >= 23 || hour <= 5):
+        console.log(Доброї ночі);
+    break;
+    case (hour >= 5 && hour <= 11):
+        console.log(Доброго ранку);
+    break;
+    case (hour >= 11 && hour <= 17):
+        console.log(Доброго дня);
+    break;
+    case (hour >= 17 && hour <= 23):
+        console.log(Доброго вечора);
+    break;
+}
