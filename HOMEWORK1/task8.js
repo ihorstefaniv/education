@@ -15,4 +15,3 @@ console.log("In the mounth: " + mounth + "seconds");
 
 let year = day * 365;
 console.log("In the year: " + year + "seconds");
-

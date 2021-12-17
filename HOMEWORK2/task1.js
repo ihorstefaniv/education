@@ -79,11 +79,17 @@ if (firstSide === secondSide || firstSide === thirdSide || secondSide === thirdS
     console.log("Площа Ващого трикутника: " + Math.floor(s * 1000) / 1000);
 };
 
+if (firstSide ** 2 = (secondSide ** 2) + (thirdSide ** 2) || secondSide ** 2 = (firstSide ** 2) + (thirdSide ** 2) || thirdSide ** 2 = (secondSide ** 2) + (firstSide ** 2)) {
+    console.log("Це прямокутний трикутник!");
+} else {
+    console.log("Це не прямокутний трикутник!");
+}
+
 //Task7
 let currDay = new Date();
 let dayTime = currDay.getHours();
 
-if (dayTime >= 23 && dayTime <= 5) {
+if (dayTime >= 23 || dayTime <= 5) {
     console.log("Доброї ночі!");
 } else if (dayTime >= 5 && dayTime <= 11) {
     console.log("Доброго ранку!");
@@ -92,3 +98,22 @@ if (dayTime >= 23 && dayTime <= 5) {
 } else {
     console.log("Доброго вечора!");
 };
+
+//task7 other
+let date = new Date();
+let hour = date.getHours();
+
+switch(true) {
+    case (hour >= 23 || hour <= 5):
+        console.log(Доброї ночі);
+    break;
+    case (hour >= 5 && hour <= 11):
+        console.log(Доброго ранку);
+    break;
+    case (hour >= 11 && hour <= 17):
+        console.log(Доброго дня);
+    break;
+    case (hour >= 17 && hour <= 23):
+        console.log(Доброго вечора);
+    break;
+}
