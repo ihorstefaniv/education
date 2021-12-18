@@ -116,4 +116,8 @@ switch(true) {
     case (hour >= 17 && hour <= 23):
         console.log(Доброго вечора);
     break;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4cb5736571ffca950a9acbd5d1b49ed6d54d1f8b
