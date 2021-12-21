@@ -74,7 +74,11 @@ console.log(findUnique([1, 2, 3, 5, 2]));
 console.log(findUnique([1, 2, 3, 5, 11]));
 
 //task 7
+let arr = [3, 4, 10, -5];
 
+function lastNumber(arr, number) {
+    
+}
 
 //task8 
 function firstUpperCase(text) {
