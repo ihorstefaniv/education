@@ -53,7 +53,6 @@ const completeTask = index => {
   tasks[index].completed = !tasks[index].completed;
   if(tasks[index].completed) {
       todoItemElems[index].classList.add('checked');
-      
   } else {
     todoItemElems[index].classList.remove('checked');
   }
