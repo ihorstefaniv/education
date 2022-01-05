@@ -74,11 +74,16 @@ console.log(findUnique([1, 2, 3, 5, 2]));
 console.log(findUnique([1, 2, 3, 5, 11]));
 
 //task 7
-let arr = [3, 4, 10, -5];
-
-function lastNumber(arr, number) {
-    
-}
+function lastElem(arr, count) {
+    if (count == 0 || isNaN(count)) return arr[arr.length - 1];
+    if (count >= arr.length) return arr;
+  
+    return arr.slice(-Math.abs(count));
+  }
+  
+  console.log(lastElem([3, 4, 10, -5])); // -5
+  console.log(lastElem([3, 4, 10, -5], 2)); // [10, -5]
+  console.log(lastElem([3, 4, 10, -5], 8)); // [3, 4, 10, -5]
 
 //task8 
 function firstUpperCase(text) {
